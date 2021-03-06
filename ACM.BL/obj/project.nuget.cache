@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "f6ivFtucJdFuJIZAIhRGKS7yCiEppZR00uQbpy0kmztj8BioxLBEZfxN+WlP9+uv2o2upWrqg/kBGG9FmNq8Jg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bihter.yalcin\\source\\repos\\ACM\\ACM.BL\\ACM.BL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bihter.yalcin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bihter.yalcin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\bin\Debug\netstandard2.0\ACM.BL.deps.json
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\bin\Debug\netstandard2.0\ACM.BL.dll
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\bin\Debug\netstandard2.0\ACM.BL.pdb
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.csprojAssemblyReference.cache
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.AssemblyInfoInputs.cache
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.AssemblyInfo.cs
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.csproj.CoreCompileInputs.cache
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.dll
+C:\Users\bihter.yalcin\source\repos\ACM\ACM.BL\obj\Debug\netstandard2.0\ACM.BL.pdb
