@@ -5,7 +5,7 @@ namespace ACM.BL
 {
     public class Customer
     {
-        public Customer()
+        public Customer():this (0) //constructor chaining used any time when constructor needs to call another 
         {
             //to overload a constructor we have to declare constructor. 
             //we can not overload automatic generated constructor.
@@ -14,17 +14,16 @@ namespace ACM.BL
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
        //Only this class can set customer ID
         public int CustomerId { get; private set; }
-       
-        private string _lastname;
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
         public string EmailAddress { get; set; }
+        public List<Address> AddressList { get; set; }
 
         public string FullName
         {
