@@ -1,15 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-
-namespace ACM.BL
+﻿namespace ACM.BL
 {
-    class AddressRepository
+    using System.Collections.Generic;
+
+    /// <summary>
+    /// Defines the <see cref="AddressRepository" />.
+    /// </summary>
+    internal class AddressRepository
     {
+        /// <summary>
+        /// The Retrieve.
+        /// </summary>
+        /// <param name="addressId">The addressId<see cref="int"/>.</param>
+        /// <returns>The <see cref="Address"/>.</returns>
         public Address Retrieve(int addressId)
         {
-            Address address = new Address (addressId);
+            Address address = new Address(addressId);
 
             //Temporary hard-coded values to return a populated customer
 
@@ -28,27 +33,32 @@ namespace ACM.BL
             return address;
         }
 
+        /// <summary>
+        /// The RetrieveByCustomerId.
+        /// </summary>
+        /// <param name="customerId">The customerId<see cref="int"/>.</param>
+        /// <returns>The <see cref="IEnumerable{Address}"/>.</returns>
         public IEnumerable<Address> RetrieveByCustomerId(int customerId)
         {
 
             var addressList = new List<Address>();
             Address address = new Address(1)
             {
-               AddressType = 1,
-               StreetLine1 = "Bag End",
-               StreetLine2 = "Bagshot row",
-               City = "Hobbiton",
-               State = "Shire",
-            Country = "Middle Eart",
-            PostalCode = "144",
+                AddressType = 1,
+                StreetLine1 = "Bag End",
+                StreetLine2 = "Bagshot row",
+                City = "Hobbiton",
+                State = "Shire",
+                Country = "Middle Eart",
+                PostalCode = "144",
 
-        };
+            };
 
             addressList.Add(address);
 
 
 
-             address = new Address(1)
+            address = new Address(1)
             {
                 AddressType = 2,
                 StreetLine1 = "Green Dragon",
@@ -64,15 +74,16 @@ namespace ACM.BL
             return addressList;
         }
 
-
-
+        /// <summary>
+        /// The Save.
+        /// </summary>
+        /// <param name="address">The address<see cref="Address"/>.</param>
+        /// <returns>The <see cref="bool"/>.</returns>
         public bool Save(Address address)
         {
 
-           
+
             return true;
-
         }
-
     }
 }
