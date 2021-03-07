@@ -1,21 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ACM.BL
+﻿namespace ACM.BL
 {
-    class OrderItem
+    /// <summary>
+    /// Defines the <see cref="OrderItem" />.
+    /// </summary>
+    internal class OrderItem
     {
+        /// <summary>
+        /// Gets or sets the ProductId.
+        /// </summary>
         public int ProductId { get; set; }
 
+        /// <summary>
+        /// Gets or sets the Quantity.
+        /// </summary>
         public int Quantity { get; set; }
 
+        /// <summary>
+        /// Gets or sets the PurchasePrice.
+        /// </summary>
         public decimal? PurchasePrice { get; set; }
 
+        /// <summary>
+        /// Gets the OrderItemId.
+        /// </summary>
         public int OrderItemId { get; private set; }
 
+        /// <summary>
+        /// The Validate.
+        /// </summary>
+        /// <returns>The <see cref="bool"/>.</returns>
         public bool Validate()
         {
             var isValid = true;
@@ -24,22 +37,25 @@ namespace ACM.BL
             if (PurchasePrice == null) isValid = false;
 
             return isValid;
-
-
         }
 
+        /// <summary>
+        /// The Retrive.
+        /// </summary>
+        /// <param name="OrderItemId">The OrderItemId<see cref="int"/>.</param>
+        /// <returns>The <see cref="OrderItem"/>.</returns>
         public OrderItem Retrive(int OrderItemId)
         {
             return new OrderItem();
         }
 
+        /// <summary>
+        /// The Save.
+        /// </summary>
+        /// <returns>The <see cref="bool"/>.</returns>
         public bool Save()
         {
             return true;
         }
-
-
-
     }
 }
-
