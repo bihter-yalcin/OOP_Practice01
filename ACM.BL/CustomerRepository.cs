@@ -20,7 +20,7 @@
         /// </summary>
         private AddressRepository addressRepository { get; set; }
 
-        /// <summary>
+        /// <summary> 
         /// The Retrieve.
         /// </summary>
         /// <param name="customerId">The customerId<see cref="int"/>.</param>

@@ -1,6 +1,7 @@
 ﻿namespace ACM.BL
 {
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Defines the <see cref="Order" />.
@@ -10,7 +11,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="Order"/> class.
         /// </summary>
-        public Order()
+        public Order(): this(0)
         {
         }
 
@@ -21,6 +22,7 @@
         public Order(int orderId)
         {
             OrderId = orderId;
+            OrderItems = new List<OrderItem>();
         }
 
         //different time zone için işimize yarıyor
@@ -33,6 +35,16 @@
         /// Gets or sets the OrderId.
         /// </summary>
         public int OrderId { get; set; }
+
+        //THIS TWO PROPERTIES ARE MAKE CONNECTION BETWEEN ORDER AND CUSTOMER,ADDRESS 
+        public int CustomerId { get; set; }
+
+        public int ShippingAddressId { get; set; }
+
+        public List<OrderItem> OrderItems { get; set; } //Composition between order and orderıtems use in constructor 
+
+
+
 
         /// <summary>
         /// The Validate.

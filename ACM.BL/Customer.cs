@@ -46,9 +46,11 @@
         public string EmailAddress { get; set; }
 
         /// <summary>
-        /// Gets or sets the AddressList.
+        /// Gets or sets the AddressList. This is COMPOSITION address and customer class HAS A relationship
         /// </summary>
         public List<Address> AddressList { get; set; }
+
+        public int CustomerType { get; set; }
 
         /// <summary>
         /// Gets the FullName.
